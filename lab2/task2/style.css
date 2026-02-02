@@ -1,0 +1,109 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Helvetica, Arial, sans-serif;
+    background: white;
+}
+#container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    height: 90vh;
+}
+#left{
+    width: 58%;
+}
+#right{
+    background: white;
+    width: 42%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: -25px;
+}
+input{
+    width: 90%;
+    padding: 14px 16px 14px 16px;
+    font-size: 15px;
+    border: 1px solid lightgray;
+    border-radius: 16px;
+    height: 60px;
+}
+#login-button{
+    width: 90%;
+    background: #00379a;
+    color: white;
+    font-size: 16px;
+    cursor: not-allowed;
+    border: none;
+    border-radius: 25px;
+    margin-top: 10px;
+    line-height: 47px;
+}
+#login-button:disabled{
+    background: #8dcdf8;
+}
+#forgot-password-button{
+    width: 90%;
+    background: white;
+    color: black;
+    font-size: 15px;
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+    margin-top: 5px;
+    line-height: 42px;
+}
+#forgot-password-button:hover{
+    background: rgba(211, 211, 211, 0.33);
+}
+#facebook-signup-button{
+    width: 90%;
+    background: white;
+    color: black;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 25px;
+    margin-top: 40px;
+    line-height: 42px;
+    border: 1px lightgray solid;
+}
+#facebook-signup-button:hover{
+    background: rgba(211, 211, 211, 0.33);
+}
+#create-acc-button{
+    width: 90%;
+    background: white;
+    color: royalblue;
+    font-size: 15px;
+    font-weight: 520;
+    cursor: pointer;
+    border-radius: 25px;
+    margin-top: 5px;
+    line-height: 42px;
+    border: 1px royalblue solid;
+}
+#create-acc-button:hover{
+    background: rgba(211, 211, 211, 0.33);
+}
+p{
+    font-size: 15px;
+    font-weight: 550;
+    margin-bottom: 10px;
+}
+img{
+    width: 870px;
+    height: 100%;
+    border-right: 2px lightgray solid;
+}
+#fblogo{
+    width:13px;
+    border: none;
+    align-self: baseline;
+    margin-right: 8px;
+}

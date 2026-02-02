@@ -1,0 +1,271 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: "Mona Sans", Arial, Helvetica, sans-serif;
+
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 20px;
+}
+.heading{
+    text-align: center;
+    margin-bottom: 80px;
+}
+.heading h1{
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+.heading p{
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 30px auto 0;
+    max-width: 1000px;
+    color: gray;
+}
+.CTA{
+    padding: 15px 30px 15px 30px;
+    line-height: 1;
+    font-size: 17px;
+    border-radius: 8px;
+    font-weight: 600;
+    align-items: center;
+    margin-top: 20px;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    border: none;
+}
+.CTA:hover{
+    background-color: #404040;
+}
+.pricing{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-gap: 30px;
+    margin-bottom: 100px;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: 1px solid #b8b8b8;
+    border-radius: 8px;
+    padding: 16px;
+    margin-top: 40px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.card h2{
+    font-size: 26px;
+    margin-top: 0;
+}
+#start-price{
+    align-self: center;
+    border: gray solid 1px;
+    border-radius: 8px;
+    color: gray;
+    width: 100px;
+    margin:0 auto;
+    line-height: 20px;
+}
+.plan-description{
+    color: gray;
+    margin: 1px auto;
+}
+.empty-space{
+    margin-top: -1px;
+    margin-bottom: 26px;
+    visibility: hidden;
+}
+.price{
+    font-size: 26px;
+    margin: 16px 0;
+    text-align: center;
+}
+.price span{
+    font-size: 50px;
+}
+.price sup{
+    font-size: 17px;
+    color: gray;
+}
+.card-header{
+    min-height: 250px;
+    text-align: center;
+    background-color: white;
+}
+.card-header p{
+    font-size: 14px;
+    text-align: center;
+    max-width: 200px;
+}
+.free-btn{
+    background-color: white;
+    color: black;
+    border: 1px solid lightgray;
+    line-height: 40px;
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 2px 70px 2px 70px;
+}
+.free-btn:hover{
+    border: 2px solid black;
+}
+.team-btn{
+    background-color: black;
+    color: white;
+    border: none;
+    line-height: 40px;
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 2px 93px 2px 93px;
+}
+.team-btn:hover{
+    background-color: #404040;
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+.free-trial{
+    background-color: black;
+    color: white;
+    line-height: 40px;
+    border-radius: 4px;
+    border: none;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 2px 22px 2px 22px;
+}
+.free-trial:hover{
+    background-color: #404040;
+}
+.contact-sales{
+    background-color: white;
+    color: black;
+    line-height: 40px;
+    border-radius: 4px;
+    border: 2px lightgray solid;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 2px 25px 2px 25px;
+}
+.contact-sales:hover{
+    border: 2px solid black;
+}
+
+.card-body{
+    min-height: auto;
+    width: 100%;
+    background-color: #fafafa;
+    flex-grow: 1;
+}
+.features{
+    list-style: none;
+    padding: 0;
+    margin: 24px 0;
+}
+.features li{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    padding: 12px 0 12px 24px;
+    position: relative;
+    font-size: 14px;
+    font-weight: bold;
+    color: #676767;
+}
+.features li::before{
+    content: ">";
+    position: absolute;
+    left: 6px;
+    top: 12px;
+    color: #676767;
+    font-size: 16px;
+}
+.features span{
+    color: #676767;
+    font-size: 12px;
+    font-weight: 400;
+}
+.card-body p{
+    font-size: 14px;
+    margin-top: 23px;
+    padding-top: 20px;
+    padding-left: 6px;
+    margin-bottom: -15px;
+}
+.addons-title{
+    color: #0969da;
+    font-weight: 550;
+    margin-bottom: -20px;
+    letter-spacing: 0.4px;
+    margin-left: 7px;
+}
+.recommendation{
+    position: relative;
+    background-color: #218bff;
+}
+.recommendation::before{
+    content: "RECOMMENDED";
+    position: absolute;
+    top: -19px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: #218bff;
+    color: white;
+    margin-top: -3px;
+    padding: 8px 0;
+    border-radius: 12px 12px 0 0;
+    font-size: 13px;
+    font-weight: 600;
+    text-align: center;
+    z-index: 1;
+    box-sizing: border-box;
+}
+.addons-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+}
+.addons h2{
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: bold;
+    font-size: 65px;
+}
+.addon{
+    background-color: white;
+    border: 1px solid lightgray;
+    border-radius: 8px;
+    padding: 24px;
+    min-height: 170px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: all 0.3s ease;
+}
+.addon:hover{
+    transform: scale(1.05);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    border: 2px solid lightgray;
+}
+.addon p{
+    color: #666;
+}
+.addon h4{
+    font-size: 19px;
+    color: black;
+}
+.addon span{
+    font-size: 16px;
+    font-weight: 550;
+}
