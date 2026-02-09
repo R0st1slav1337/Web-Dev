@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: system-ui, Arial, Helvetica, sans-serif;
+    background: white;
+    color: black;
+}
+header {
+    background: black;
+    color: white;
+    padding: 10px 20px;
+}
+header h1 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 0.3px;
+}
+main {
+    max-width: 800px;
+    margin: 28px auto;
+    padding: 0 16px;
+}
+.card {
+    background: whitesmoke;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    padding: 18px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.title {
+    text-align: center;
+    margin: 4px 0 16px;
+    font-size: 35px;
+    font-weight: 500;
+}
+form {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 16px;
+    max-width: 560px;
+}
+label {
+    position: absolute;
+    left: -9999px;
+}
+input[type=text] {
+    flex: 1;
+    min-width: 0;
+    padding: 12px 12px;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    font-size: 16px;
+    outline: none;
+    background: white;
+}
+button {
+    border: none;
+    border-radius: 10px;
+    padding: 12px 16px;
+    font-size: 16px;
+    cursor: pointer;
+}
+#addBtn {
+    background: cornflowerblue;
+    color: white;
+}
+#addBtn:active {
+    transform: translateY(1px);
+}
+.list {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    overflow: hidden;
+    max-width: 640px;
+    background: white;
+}
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14px;
+    padding: 14px 14px;
+    border-top: 1px solid lightgray;
+}
+.item:first-child {
+    border-top: none;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    min-width: 0;
+    flex: 1;
+}
+.item input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    accent-color: #2563eb;
+    cursor: pointer;
+}
+
+.text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 16px;
+}
+.done .text {
+    text-decoration: line-through;
+    color: #6b7280;
+}
+.deleteBtn {
+    background: transparent;
+    border: 1px solid navajowhite;
+    color: red;
+    padding: 10px 12px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.deleteBtn:hover {
+    background-color: #c80e0e;
+}
+.hint {
+    text-align: center;
+    color: #6b7280;
+    font-size: 13px;
+    margin-top: 10px;
+}
