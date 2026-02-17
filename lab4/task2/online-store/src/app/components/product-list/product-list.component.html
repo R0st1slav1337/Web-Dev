@@ -1,0 +1,9 @@
+<h1 class="title">Online Store</h1>
+
+<section class="grid">
+  <app-product-card *ngFor="let p of products"
+                    [product]="p"
+                    [openedSharedId]="openedSharedId"
+                    (shareOpened)="openedSharedId = $event"
+  ></app-product-card>
+</section>
